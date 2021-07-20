@@ -1,0 +1,29 @@
+﻿{
+	"Name": "Путь к онлайн-продажам",
+	"Description": "Освойте принципы интернет-продаж и запустите свою воронку, лендинг или интернет-магазин.",
+	"ImageURL": "https://один-путь.рф/pictures/landing/2/2/223/27d8812bf6344eecbbda9480e7ae9e94.jpg",
+	"Website": "https://xn----gtbmuckvh6f.xn--p1ai/",
+	"Price": 2000,
+	"Course": [
+		{
+			"ChapterName": "Приветствие",
+			"Lessons": [
+				{
+					"Name": "Приветствие",
+					"Header": "Добро пожаловать на курс Путь конлайн-продажам",
+					"Videos": [
+						{
+							"VideoName": "Приветствие",
+							"Youtube": "https://www.youtube.com/watch?v=d0E7QfpOWBg"
+						}
+					] 
+				} ]
+				},
+				{ "ChapterName": "Подготовка" },
+				{ "ChapterName": "1. Предложение" },
+				{ "ChapterName": "2. Запуск" },
+				{ "ChapterName": "3. Воронки и работа с базой" },
+				{ "ChapterName": "4. Трафик" }
+			]
+
+		}
