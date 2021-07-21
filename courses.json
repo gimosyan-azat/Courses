@@ -1,0 +1,26 @@
+{
+    "Courses": [
+        {
+            "Course_GUID": "88e77884-b944-4960-8ca2-75b450dc38d6",
+            "Name": "Путь к онлайн-продажам",
+            "Description": "Освойте принципы интернет-продаж и запустите свою воронку, лендинг или интернет-магазин.",
+            "ImageURL": "https://один-путь.рф/pictures/landing/2/2/223/27d8812bf6344eecbbda9480e7ae9e94.jpg",
+            "Website": "https://xn----gtbmuckvh6f.xn--p1ai/",
+            "Price": 2000,
+            "PurchaseLink": "https://xn----gtbmuckvh6f.xn--p1ai/checkout/lp?lpid=2",
+            "LessonsCount": 10,
+            "Duration": "1 часа 30 минут"
+        },
+        {
+            "Course_GUID": "dd8905fc-8587-42aa-b231-6a31b72614ae",
+            "Name": "Выбор воронки для вашего бизнеса",
+            "Description": "Этот курс для тех, кто только знакомится с термином воронки и по результату курса вы будете понимать какую именно воронку лучше использовать для вашего бизнеса.",
+            "ImageURL": "https://new.advantshop.net/Areas/Off/Content/courses/images/course-funnels.jpg",
+            "Website": "https://crm.advant.shop/lp/kurs-pro-avtovoronki",
+            "Price": 990,
+            "PurchaseLink": "https://xn----gtbmuckvh6f.xn--p1ai/checkout/lp?lpId=804&products=12484&clear=true",
+            "LessonsCount": 14,
+            "Duration": "2 часа 48 минут"
+        }
+    ]
+}
