@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using CoursesAPI.Data;
+using CoursesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoursesAPI.Controllers
@@ -7,9 +9,30 @@ namespace CoursesAPI.Controllers
     [ApiController]
     public class CoursesController : ControllerBase
     {
-        public ActionResult<IEnumerable<string>> Get()
+        private readonly ICourseAPIRepo _repository;
+
+        public CoursesController(ICourseAPIRepo repository)
         {
-            return new string[] {"this", "is", "hard", "coded"};
+            _repository = repository;
         }
-    }    
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Course>> GetAllCourses()
+        {
+            var courses = _repository.GetAllCourses();
+            return Ok(courses);
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<Course> GetAllCourseById(int id)
+        {
+            var course = _repository.GetCourseById(id);
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(course);
+        }
+    }
 }
