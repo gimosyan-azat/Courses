@@ -1,4 +1,4 @@
-CoursesAPI/bin/
-CoursesAPI/obj/
+CoursesAPI/bin
+CoursesAPI/obj
 CoursesAPI.Tests/bin
 CoursesAPI.Tests/obj
