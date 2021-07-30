@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using CoursesAPI.Models;
 using System.Linq;
+using System;
 
 namespace CoursesAPI.Data
 {
@@ -15,12 +16,22 @@ namespace CoursesAPI.Data
 
         public void CreateCourse(Course course)
         {
-            throw new System.NotImplementedException();
+            if (course == null)
+            {
+                throw new ArgumentException(nameof(course));
+            }
+
+            _context.CourseItems.Add(course);
         }
 
         public void DeleteCourse(Course course)
         {
-            throw new System.NotImplementedException();
+            if (course == null)
+            {
+                throw new ArgumentNullException(nameof(course));
+            }
+
+            _context.CourseItems.Remove(course);
         }
 
         public IEnumerable<Course> GetAllCourses()
@@ -35,12 +46,12 @@ namespace CoursesAPI.Data
 
         public bool SaveChanges()
         {
-            throw new System.NotImplementedException();
+            return(_context.SaveChanges() >= 0);
         }
 
         public void UpdateCourse(Course course)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }
