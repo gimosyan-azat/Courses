@@ -70,7 +70,7 @@ namespace CoursesAPI.Controllers
         }
 
         [HttpPatch("{id}")]
-        public ActionResult PartialCourseUpdate(int id, JsonPatchDocument<CoursesUpdateDto> pathcDoc)
+        public ActionResult PartialCourseUpdate(int id, JsonPatchDocument<CoursesUpdateDto> patchDoc)
         {
             var course = _repository.GetCourseById(id);
             if (course == null)
@@ -79,7 +79,7 @@ namespace CoursesAPI.Controllers
             }
 
             var courseToPatch = _mapper.Map<CoursesUpdateDto>(course);
-            pathcDoc.ApplyTo(courseToPatch, ModelState);
+            patchDoc.ApplyTo(courseToPatch, ModelState);
 
             if (!TryValidateModel(courseToPatch))
             {
