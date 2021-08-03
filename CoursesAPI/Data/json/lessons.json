@@ -6,12 +6,28 @@
 			"Lessons": [
 				{
 					"Name": "Приветствие",
-					"Header": "Добро пожаловать на курс Путь конлайн-продажам",
-					"Videos": [
+					"Duration": 2.15,
+					"Blocks": [
 						{
-							"VideoName": "Приветствие",
-							"Description": null,
-							"Youtube": "https://www.youtube.com/watch?v=d0E7QfpOWBg"
+							"Type": "H1",
+							"Text": "Приветствие"
+						},
+						{
+							"Type": "H2",
+							"Text": "Добро пожаловать на курс Путь конлайн-продажам"
+						},
+						{
+							"Type": "Video",
+							"Link": "https://www.youtube.com/watch?v=d0E7QfpOWBg"
+						},
+						{
+							"Type": "Button",
+							"Name": "Скачать домашнее задание",
+							"Link": "http://"
+						},
+						{
+							"Type": "Video",
+							"Link": "https://www.youtube.com/watch?v=d0E7QfpOWBg"
 						}
 					]
 				},
