@@ -5,9 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using CoursesAPI.Dtos;
 using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CoursesAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CoursesController : ControllerBase
