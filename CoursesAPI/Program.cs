@@ -13,6 +13,7 @@ namespace CoursesAPI
     {
         public static void Main(string[] args)
         {
+            //hello
             CreateHostBuilder(args).Build().Run();
         }
 
